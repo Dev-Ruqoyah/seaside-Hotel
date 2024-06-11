@@ -32,7 +32,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     background: #402B24;
 }
 section.rooms{
-    height: 100vh;
+    /* height: 100vh; */
     background: linear-gradient(to right,rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("https://img.freepik.com/free-photo/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table_105762-1783.jpg?t=st=1718015000~exp=1718018600~hmac=84eeac93c5d6320634829a4760a616f9194817e8ef710b85e6d2494422423903&w=3740");
     background-position: center;
     background-size: cover;
@@ -70,11 +70,10 @@ section.rooms{
 }
 .servicesection{
     background: #8C5C4A;
-    height: 80vh;
+    /* height: 80vh; */
 }
 .bg-blac{
     background: #402B24;
-    height: 100vh;
 }
 .dess{
     cursor: pointer;
@@ -88,12 +87,23 @@ section.rooms{
     cursor: pointer;
 }
 .event-image{
-    /* height: 200px; */
+    height: 228px;
+    width: 100%;
     object-fit: cover;
 }
 
+
+@media (max-width:1024px) {
+    .event-image{
+        height: 215px;
+    }
+}
 @media (max-width:767px) {
     .ovx{
         overflow-x: scroll;
+        flex-wrap: nowrap !important;
+    }
+    .event-image{
+        height: 228px;
     }
 }

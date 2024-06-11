@@ -10,10 +10,11 @@
 
         <!-- BOOTSTRAP ICON -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
     <!-- NAVBAR -->
     <main>
@@ -49,7 +50,7 @@
             </div>
         </nav>
         <section class="hero-section  row container mx-auto d-flex justify-content-center align-items-center h-75">
-            <div class="content col-lg-6 ">
+            <div class="content col-lg-6 " data-aos="fade-up" data-aos-duration ="3000">
                 <h1 class="text-white fs-b">Enjoy Your <br> Dream Vacation </h1>
                 <p class="text-white fs-5">The Seaside Hotel is the right choice for visitors who are searching for a
                     combination of charm,peace and Comfort</p>
@@ -68,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-8 servi1 py-4">
+            <div class="col-lg-4 col-md-4 col-8 servi1 py-4" data-aos="fade-up" data-aos-duration="3000">
                 <div class="d-flex justify-content-center align-item-center gap-4 mt-4">
                     <i class="bi bi-geo-alt fs-3 text-white"></i>
                     <div class="con text-white">
@@ -88,14 +89,16 @@
             </div>
         </div>
     </main>
+
+    <!-- ROOMS SECTION -->
     <section class="rooms py-5 ">
-        <div class="container pt-2">
+        <div class="container pt-2 h-100">
             <div class="header mt-3 d-flex flex-column align-items-center justify-content-center  mx-auto">
                 <h4 class="text-white">Our Rooms</h4>
                 <div class="border w-25"></div>
             </div>
-            <div class="row mt-3 flex flex-nowrap ovx">
-                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+            <div class="row gy-3 mt-3 flex flex-wrap ovx h-100 align-items-center justify-content-center mx-auto ">
+                <div class="col-lg-4 col-md-6 col-12 mx-auto" data-aos="fade-right" data-aos-duration="3000">
                     <div class="room-image">
                         <div class="d-flex justify-content-end align-item-end ">
                             <p class="text-white left rounded-2 p-1 m-2">ONLY 3 ROOM LEFT</p>
@@ -147,7 +150,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                <div class="col-lg-4 col-md-6 col-12 mx-auto" data-aos="fade-left" data-aos-duration="3000">
                     <div class="room-image2">
                         <div class="d-flex justify-content-end align-item-end ">
                             <p class="text-white left rounded-2 p-1 m-2">ONLY 2 ROOM LEFT</p>
@@ -176,13 +179,15 @@
             </div>
         </div>
     </section>
-    <section class=" servicesection py-5" style="height: 100vh;">
-        <div class="container h-100">
+
+    <!-- SERVICES SECTION -->
+    <section class=" servicesection py-5" >
+        <div class="container h-100 py-5">
             <div class="row gap- mx-auto h-100">
-                <div class="col-lg-3 col-md-3 col-6 h-100">
+                <div class="col-lg-3 col-md-3 col-6 h-100" data-aos="fade-down" data-aos-duration="3000">
                     <img src="https://img.freepik.com/free-photo/small-bathroom-with-modern-style-ai-generated_23-2150694930.jpg?t=st=1718019048~exp=1718022648~hmac=a18a742553894164af6f337c3c52019c7ec4c9b77361c7c1fbbd2966b2008802&w=390" width="100%" alt="">
                 </div>
-                <div class="col-lg-3 col-md-3 col-6 mt-4 h-100">
+                <div class="col-lg-3 col-md-3 col-6 mt-4 h-100" data-aos="fade-up" data-aos-duration="3000">
                     <img src="https://img.freepik.com/free-photo/bathroom-sign-metallic-door_23-2149936876.jpg?t=st=1718019124~exp=1718022724~hmac=bf106f5c8d8a3e8f660c32922d6cda2ceb1aef371a2460a2520641b949c1f8a0&w=390" width="100%" alt="">
                 </div>
                 <div class="col-lg-5 col-md-5 col-12">
@@ -197,8 +202,10 @@
             </div>
         </div>
     </section>
+
+    <!-- FOOD SECTION -->
     <section class="food py-5 bg-blac">
-        <div class="container">
+        <div class="container h-100">
             <div class="header2 d-flex flex-column align-items-center justify-content-center">
                 <h3 class="text-white">Why Choose Us?</h3>
                 <div class="border w-25"></div>
@@ -213,21 +220,21 @@
                    
                   </ul>
             </div>
-            <div class="image-container">
-                <div class="all row gy-4 flex flexwrap ovx">
-                    <img src="https://img.freepik.com/free-photo/bowl-banana-split-ice-cream-with-banana-split-bananas-top_188544-32639.jpg?t=st=1718024187~exp=1718027787~hmac=2f9c25cb83b1d033518671f1c9a4b5ac9a1589b7c75dcd4494b07a64aba5406d&w=740" class="allimages all col-4">
+            <div class="image-container py-5 h-100 d-flex justify-content-center align-item-center">
+                <div class="all row gy-4 d-flex flex-wrap ovx">
+                    <img src="https://img.freepik.com/free-photo/bowl-banana-split-ice-cream-with-banana-split-bananas-top_188544-32639.jpg?t=st=1718024187~exp=1718027787~hmac=2f9c25cb83b1d033518671f1c9a4b5ac9a1589b7c75dcd4494b07a64aba5406d&w=740" class="allimages all col-lg-4 col-md-4 col-6" data-aos="fade-right" data-aos-duration="3000">
 
-                    <img src="https://img.freepik.com/free-photo/chocolate-brownie-cake-with-scoop-ice-cream_155003-433.jpg?t=st=1718024214~exp=1718027814~hmac=babd77030e5b605d6407147032e481ab787f3d93c453b1037beb409c73a15bf8&w=360" class="allimages all col-4">
+                    <img src="https://img.freepik.com/free-photo/chocolate-brownie-cake-with-scoop-ice-cream_155003-433.jpg?t=st=1718024214~exp=1718027814~hmac=babd77030e5b605d6407147032e481ab787f3d93c453b1037beb409c73a15bf8&w=360" class="allimages all col-lg-4 col-md-4 col-6">
 
-                    <img src="https://img.freepik.com/free-photo/umbrella-chair-with-sea-view_1203-7443.jpg?t=st=1718026466~exp=1718030066~hmac=f7ca255f2e74c29d07a766ce7542106fabe4e042273a6fc6213b8e0f5357cd78&w=740" class="allimages all col-4">
+                    <img src="https://img.freepik.com/free-photo/umbrella-chair-with-sea-view_1203-7443.jpg?t=st=1718026466~exp=1718030066~hmac=f7ca255f2e74c29d07a766ce7542106fabe4e042273a6fc6213b8e0f5357cd78&w=740" class="allimages all col-lg-4 col-md-4 col-6 " data-aos="fade-left" data-aos-duration="3000">
 
-                    <img src="https://img.freepik.com/free-photo/close-up-coffee-cup-wooden-table-steam-rising-generative-ai_188544-8921.jpg?t=st=1718026688~exp=1718030288~hmac=c9f67a5fd16f7a722ea3b2193ee20256e35db7acfe4f1cf6ed56e86fcef23437&w=740" class="allimages all col-4">
-                    <img src="https://img.freepik.com/free-photo/juicy-steak-medium-rare-beef-with-spices-grilled-vegetables_24972-2328.jpg?t=st=1718027646~exp=1718031246~hmac=48c2ecdfe6783fe7b7ae18e0bca9d069fbc50ca17c4e734dffa32046abb65e78&w=740" class="allimages all col-4">
+                    <img src="https://img.freepik.com/free-photo/close-up-coffee-cup-wooden-table-steam-rising-generative-ai_188544-8921.jpg?t=st=1718026688~exp=1718030288~hmac=c9f67a5fd16f7a722ea3b2193ee20256e35db7acfe4f1cf6ed56e86fcef23437&w=740" class="allimages all col-lg-4 col-md-4 col-6" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="https://img.freepik.com/free-photo/juicy-steak-medium-rare-beef-with-spices-grilled-vegetables_24972-2328.jpg?t=st=1718027646~exp=1718031246~hmac=48c2ecdfe6783fe7b7ae18e0bca9d069fbc50ca17c4e734dffa32046abb65e78&w=740" class="allimages all col-lg-4 col-md-4 col-6">
 
-                    <img src="https://img.freepik.com/premium-photo/table-chair-with-blue-ocean_1339-80359.jpg?w=740" class="allimages all col-4">
+                    <img src="https://img.freepik.com/premium-photo/table-chair-with-blue-ocean_1339-80359.jpg?w=740" class="allimages all col-lg-4 col-md-4 col-6" data-aos="fade-left" data-aos-duration="3000">
                 </div>
-                <div class="desserts row gy-3 ovx ">
-                    <img src="https://img.freepik.com/free-photo/bowl-banana-split-ice-cream-with-banana-split-bananas-top_188544-32639.jpg?t=st=1718024187~exp=1718027787~hmac=2f9c25cb83b1d033518671f1c9a4b5ac9a1589b7c75dcd4494b07a64aba5406d&w=740" class="desert col-lg-4 col-md-4 col-6" style="display: none;">
+                <div class="desserts row gy-3 d-flex flex-nowrap ovx ">
+                    <img src="https://img.freepik.com/free-photo/bowl-banana-split-ice-cream-with-banana-split-bananas-top_188544-32639.jpg?t=st=1718024187~exp=1718027787~hmac=2f9c25cb83b1d033518671f1c9a4b5ac9a1589b7c75dcd4494b07a64aba5406d&w=740" class="desert col-lg-4 col-md-4 col-6" style="display: none;" >
                     <img src="https://img.freepik.com/free-photo/chocolate-brownie-cake-with-scoop-ice-cream_155003-433.jpg?t=st=1718024214~exp=1718027814~hmac=babd77030e5b605d6407147032e481ab787f3d93c453b1037beb409c73a15bf8&w=360" class="desert col-lg-4 col-md-4 col-6" style="display: none;">
 
                     <img src="https://img.freepik.com/free-photo/sausages-dough_2829-8405.jpg?t=st=1718025863~exp=1718029463~hmac=c8cd2c8d3ac04db11934ccfb3c88459012578f68b5697b38a783deb485b7f743&w=740" class="desert col-lg-4 col-md-4 col-6" style="display: none;">
@@ -262,16 +269,17 @@
         </div>
     </section>
 
-    <section class="bg-blac py-5" style="height: 100vh;">
-        <div class="container">
+    <!-- SECTION EVENT -->
+    <section class="bg-blac py-5" >
+        <div class="container h-100">
             <div class="header2 text-white d-flex flex-column align-items-center justify-content-center">
                 <h3>Upcoming Event</h3>
                 <div class="border w-25"></div>
             </div>
-            <div class="row container">
-                <div class="events col-lg-4 col-md-4 col-12">
+            <div class="row container mt-4 h-100 d-flex align-items-center justify-content-center gy-3 ">
+                <div class="events col-lg-4 col-md-6 col-12 mx-auto" data-aos="fade-right" data-aos-duration="3000">
                     <div class="event-image">
-                        <img src="" alt="" height="100%">
+                        <img src="https://img.freepik.com/free-photo/decorated-wedding-hall-with-candles-round-tables-centerpieces_8353-10057.jpg?t=st=1718101334~exp=1718104934~hmac=f344010e443b5cced1e1a96f951fb17195051f31ed162390253500d509a2b4ec&w=740" alt="" height="100%">
                     </div>
                     <div class="event-date d-flex ">
                         <div class="fl bg-black px-3 text-white">
@@ -283,9 +291,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="events col-lg-4 col-md-4 col-12">
+                
+                <div class="events col-lg-4 col-md-6 col-12 mx-auto">
                     <div class="event-image">
-                        <img src="" alt="" height="100%">
+                        <img src="https://img.freepik.com/free-photo/bunch-flowers-leaves-table_1304-4187.jpg?t=st=1718101567~exp=1718105167~hmac=f56635fbf62b8f459adb1b48d752684337fefe07f0e961f1c21489d8e87145ec&w=740" alt="" height="100%">
                     </div>
                     <div class="event-date d-flex ">
                         <div class="fl bg-black px-3 text-white">
@@ -297,9 +306,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="events col-lg-4 col-md-4 col-12">
+
+                <div class="events col-lg-4 col-md-6 col-12 mx-auto"  data-aos="fade-left" data-aos-duration="3000">
                     <div class="event-image">
-                        <img src="" alt="" height="100%">
+                        <img src="https://img.freepik.com/free-photo/decorated-banquet-hall-with-flowers_8353-10058.jpg?t=st=1718101515~exp=1718105115~hmac=e9565e0a35d78132800e48cdf25657dfffa93bf5dd5b9b665308b834175f7918&w=740" alt="" height="100%">
                     </div>
                     <div class="event-date d-flex ">
                         <div class="fl bg-black px-3 text-white">
@@ -314,10 +324,12 @@
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
     <footer class="bg-black py-5 pt-5" >
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-6 text-white">
+                <div class="col-lg-3 col-md-6 col-12 text-white mx-auto">
                     <ul class="text-white">
                         <li><h5>ADDRESS</h5></li>
                         <li class="d-flex align-item-center text-white gap-2">
@@ -332,12 +344,12 @@
                         </li>
                         <li class="d-flex align-item-center text-white gap-2">
                             <i class="bi bi-envelope fs-5 text-white"></i>
-                            <p class=""><a class="text-white text-decoration-none" href="mailto:hamzatrukayat2822@gmail.com">hamzatrukayat2822@gmail.com</a></p>
+                            <p class=""><a class="text-white text-decoration-none" href="mailto:hamzatrukayat2822@gmail.com">hamzatrukayat <br>2822@gmail.com</a></p>
 
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-6 text-white">
+                <div class="col-lg-3 col-md-6 col-12 text-white mx-auto">
                     <ul class="text-white">
                         <li><h5>INFORMATION</h5></li>
                         
@@ -349,7 +361,7 @@
                        
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-6 text-white">
+                <div class="col-lg-3 col-md-6 col-12 text-white mx-auto">
                     <ul class="text-white">
                         <li><h5>MY ACCOUNT</h5></li>
                         
@@ -361,11 +373,11 @@
                        
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-6 text-white">
+                <div class="col-lg-3 col-md-6 col-12 text-white mx-auto">
                     <ul class="text-white">
                         <li><h5>NEWSLETTER</h5></li>
                         <p>Subscribe to Newsletter to get latest news,tips and advice</p>
-                        <div class="d-flex ">
+                        <div class="d-flex " >
                             <input class="border-0 outline-none" type="email" name="email" id="">
                             <button class="btn btn-light rounded-0 px-3">Send</button>
                         </div>
@@ -375,10 +387,15 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
         <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>
