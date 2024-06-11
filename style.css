@@ -6,8 +6,10 @@
 }
 main{
     height: 100vh;
-    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("https://img.freepik.com/free-photo/3d-rendering-modern-dining-room-living-room-with-luxury-decor_105762-2256.jpg?t=st=1718010856~exp=1718014456~hmac=67e7dbe4ce07c7b3708ec7937d061fe3704710f33e2647889d32ded94178a1d0&w=3740");
+    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("https://img.freepik.com/free-photo/full-shot-man-carrying-baggage_23-2149963942.jpg?t=st=1718107596~exp=1718111196~hmac=7fecd6daa11984c0df8b9d2fe368f5544c10fa114fcde1606ba62c45133b01d1&w=740");
     background-position: center;
+    background-size: cover;
+    
     /* background-size: ; */
 }
 .nav-bar{
