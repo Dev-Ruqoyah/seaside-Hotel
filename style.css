@@ -4,6 +4,89 @@
     list-style-type: none;
 
 }
+
+/* BUTTON */
+.button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #8C5C4A;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #8C5C4A;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #a36d5a;
+    box-shadow: 4px 5px 17px -4px #b8755d;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #8C5C4A;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+
+  /* BOOK BUTTON */
+  .book{
+    position: relative;
+    background-color: #b8755d;
+    border-radius: 5px;
+    box-shadow:#754330 ;
+    padding: 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 154px;
+    height: 49px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .book::before {
+    content: "";
+    background-color: #753d29;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .book:hover::before {
+    width: 100%;
+  }
+  
+  input{
+    outline: 0;
+  }
+  
+  .button:hover::before {
+    width: 250%;
+  }
+  
 main{
     height: 100vh;
     background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("https://img.freepik.com/free-photo/full-shot-man-carrying-baggage_23-2149963942.jpg?t=st=1718107596~exp=1718111196~hmac=7fecd6daa11984c0df8b9d2fe368f5544c10fa114fcde1606ba62c45133b01d1&w=740");
@@ -26,12 +109,25 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .servi{
     background: #BF815E;
+    transition: .7s ease-in-out;
+}
+.servi:hover{
+    transform: translateY(-10px);
+}
+.servi2:hover{
+    transform: translateY(10px);
 }
 .servi1{
     background: #8C5C4A;
+    transition: .6s  ease-in-out ;
 }
+.servi1:hover{
+    background: #8c5c4a9c;
+}
+
 .servi2{
     background: #402B24;
+    transition: .7s ease-in-out;
 }
 section.rooms{
     /* height: 100vh; */
@@ -44,18 +140,39 @@ section.rooms{
     background: url("https://img.freepik.com/free-photo/3d-rendering-luxury-modern-bedroom-suite-hotel-with-tv-cabinet_105762-2278.jpg?t=st=1718016172~exp=1718019772~hmac=2986fbd75817d094cff07ba380e16eac6c0b4a0506615b0432b9dfa39df9908f&w=770");
     background-position: center;
     background-size: cover;
+    transition: .5s ease-in;
+    transform: translateY(10px);
+}
+.room-image:hover{
+    background: url("https://images.pexels.com/photos/6782567/pexels-photo-6782567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+}
+.room-image1:hover{
+    background: url("https://images.pexels.com/photos/6782578/pexels-photo-6782578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+}
+.room-image2:hover{
+    background: url("https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
 }
 .room-image1{
     height: 250px;
     background: url("https://img.freepik.com/free-psd/realistic-modern-double-bedroom-with-furniture-frame_176382-437.jpg?t=st=1718016390~exp=1718019990~hmac=39a483f9dec7ceed6be91c32026e7db127a72f025dff3ef4fbb89a6f27580d54&w=826");
     background-position: center;
     background-size: cover;
+    transition: .5s ease-in;
+    transform: translateY(10px);
 }
 .room-image2{
     height: 250px;
     background: url("https://img.freepik.com/free-psd/realistic-modern-double-bedroom-with-furniture-frame_176382-423.jpg?t=st=1718016455~exp=1718020055~hmac=6b37f9e213a7d26e4dd2e12a948cbae327c26e528e149fcbe0e5e251e2df28a4&w=826");
     background-position: center;
     background-size: cover;
+    transition: .5s ease-in;
+    transform: translateY(10px);
 }
 .room-content{
     /* height: 200px; */
@@ -65,14 +182,31 @@ section.rooms{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    margin-top: -30px;
+    /* margin-top: -30px; */
+    transition: .9s;
+}
+.room-content:hover{
+    transform: translateY(-20px);
+       background: #402b2467;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 .left{
     background: #8C5C4A;
 }
+
 .servicesection{
     background: #8C5C4A;
     /* height: 80vh; */
+}
+.all img,.desserts img,.coffee img{
+    transition: .7s;
+}
+.all img:hover,.desserts img:hover,.coffee img:hover{
+    transform: translateX(-10px);
 }
 .bg-blac{
     background: #402B24;
@@ -84,6 +218,12 @@ section.rooms{
     height: 200px;
     object-fit: cover;
     /* width: 200px; */
+}
+.events{
+    transition: .9s;
+}
+.events:hover{
+    transform: translateY(-10px);
 }
 .cursor{
     cursor: pointer;
