@@ -219,8 +219,17 @@ section.rooms{
     object-fit: cover;
     /* width: 200px; */
 }
+.main{
+    height: 100vh;
+    background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url("https://img.freepik.com/free-photo/beautiful-umbrella-chair-around-swimming-pool-hotel-resort_74190-1006.jpg?t=st=1718118858~exp=1718122458~hmac=b6b61334e5b307a9529f0bdee543504569b326a587005e64619090d67cbaa8de&w=2740");
+    background-position: center;
+}
+.fls{
+    font-size: 50px !important;
+}
 .events{
     transition: .9s;
+    width: 100%;
 }
 .events:hover{
     transform: translateY(-10px);
@@ -229,9 +238,12 @@ section.rooms{
     cursor: pointer;
 }
 .event-image{
-    height: 228px;
+    
     width: 100%;
     object-fit: cover;
+}
+.event-date{
+    width: 100%;
 }
 
 
@@ -246,6 +258,9 @@ section.rooms{
         flex-wrap: nowrap !important;
     }
     .event-image{
-        height: 228px;
+        height: 210px;
+    }
+    .event-date{
+        width: 67%;
     }
 }
